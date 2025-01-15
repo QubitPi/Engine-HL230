@@ -1,5 +1,5 @@
 /**
- * Copyright Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,15 +18,15 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Jersey Webservice Template',
+  title: 'Engine HL230',
   tagline: 'You can innovate given the right technology',
   favicon: 'img/favicon.ico',
 
   url: 'https://qubitpi.github.io',
-  baseUrl: '/jersey-webservice-template/',
+  baseUrl: '/Engine-HL230/',
 
   organizationName: 'QubitPi',
-  projectName: 'jersey-webservice-template',
+  projectName: 'Engine-HL230',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -45,12 +45,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/QubitPi/jersey-webservice-template/tree/master/docs/',
+          editUrl: 'https://github.com/QubitPi/Engine-HL230/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
-          editUrl: 'https://github.com/QubitPi/jersey-webservice-template/tree/master/docs/',
+          editUrl: 'https://github.com/QubitPi/Engine-HL230/tree/master/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,9 +63,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Jersey Webservice Template',
+      title: 'Engine HL230',
       logo: {
-        alt: 'Jersey Webservice Template Logo',
+        alt: 'Engine HL230 Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -77,12 +77,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://QubitPi.github.io/jersey-webservice-template/apidocs",
+          href: "https://QubitPi.github.io/Engine-HL230/apidocs",
           label: "API",
           position: "left",
         },
         {
-          href: 'https://github.com/QubitPi/jersey-webservice-template',
+          href: 'https://github.com/QubitPi/Engine-HL230',
           label: 'GitHub',
           position: 'right',
         },
@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/QubitPi/jersey-webservice-template/discussions',
+              href: 'https://github.com/QubitPi/Engine-HL230/discussions',
             },
           ],
         },
@@ -118,7 +118,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/QubitPi/jersey-webservice-template',
+              href: 'https://github.com/QubitPi/Engine-HL230',
             },
           ],
         },
@@ -130,11 +130,11 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
       additionalLanguages: ["java", "bash", "json"]
     },
-    algolia: {
-      appId: '9U0KDRI80N',
-      apiKey: 'b52ee70139e257c524de98470565cdb4',
-      indexName: 'jersey-webservice-template'
-    },
+    // algolia: {
+    //   appId: '9U0KDRI80N',
+    //   apiKey: 'b52ee70139e257c524de98470565cdb4',
+    //   indexName: 'jersey-webservice-template'
+    // },
   } satisfies Preset.ThemeConfig,
 };
 

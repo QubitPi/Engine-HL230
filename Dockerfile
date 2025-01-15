@@ -1,4 +1,4 @@
-# Copyright Jiaqi Liu
+# Copyright 2025 Jiaqi Liu
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ RUN rm jetty-home-$JETTY_VERSION.tar.gz
 RUN mkdir jetty-base
 RUN cd jetty-base && java -jar $JETTY_HOME/start.jar --add-module=annotations,server,http,deploy,servlet,webapp,resources,jsp
 
-COPY ./target/jersey-webservice-template-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
+COPY ./target/Engine-HL230-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
 
 COPY ./Dockerfile-startup.sh /Dockerfile-startup.sh
 CMD [ "/Dockerfile-startup.sh" ]

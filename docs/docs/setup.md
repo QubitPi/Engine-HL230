@@ -6,14 +6,14 @@ title: Setup
 :::caution
 
 Before proceeding, it is important to note that **we DO NOT support Spring/Spring Boot paradigm**.
-[Jersey Webservice Template] runs as a **[JAX-RS]** webservice backed by its reference implementation [Jersey] running
+[Engine HL230] runs as a **[JAX-RS]** webservice backed by its reference implementation [Jersey] running
 as a WAR inside [Jetty] container.
 
 More info about difference between JAX-RS and Spring can be found in [this thread](https://stackoverflow.com/a/42955575)
 
 :::
 
-This section discusses the one-time setup in order to develop [Jersey Webservice Template].
+This section discusses the one-time setup in order to develop [Engine HL230].
 
 Prepare for Local Development
 -----------------------------
@@ -68,24 +68,24 @@ OpenJDK 64-Bit Server VM (build 17.0.10+9, mixed mode)
 
 ### Installing Docker Engine
 
-[Jersey Webservice Template] has [Docker-based integration tests][Docker-based integration tests];
-it also supports [running template webserivce in Docker][jersey-webservice-template Dockerfile]. Docker can be
+[Engine HL230] has [Docker-based integration tests][Docker-based integration tests];
+it also supports [running template webserivce in Docker][Engine-HL230 Dockerfile]. Docker can be
 installed by following its [official instructions](https://docs.docker.com/desktop/install/mac-install/)
 
 Getting Source Code
 -------------------
 
 ```bash
-git clone git@github.com:QubitPi/jersey-webservice-template.git
-cd jersey-webservice-template
+git clone git@github.com:QubitPi/Engine-HL230.git
+cd Engine-HL230
 ```
 
-### Syncing up with jersey-webservice-template's Code Styles with IntelliJ
+### Syncing up with Engine-HL230's Code Styles with IntelliJ
 
 For the moment, we have distilled the most important code style conventions with respect to
-jersey-webservice-template's code as IntelliJ settings. If IntelliJ is used for IDE, we may import these code style
-settings by importing the [jersey-webservice-template-Project-intellij-code-style.xml][style config] file in the root
-of the repo. The setting for the project will appear as a new Scheme named "jersey-webservice-template-Project" under
+Engine-HL230's code as IntelliJ settings. If IntelliJ is used for IDE, we may import these code style
+settings by importing the [Engine-HL230-Project-intellij-code-style.xml][style config] file in the root
+of the repo. The setting for the project will appear as a new Scheme named "Engine-HL230-Project" under
 IDE's **Editor** -> **Code Style** section.
 
 Please also enable "remove unused imports" by **Editor** -> **General** -> **Auto Import** -> **Optimize Imports on the
@@ -117,15 +117,15 @@ If tabs still come out at 2 spaces when hitting TAB or Enter, not 4 spaces, try:
 2. Do you have any .editorconfig files anywhere in the path of that file? Settings from .editorconfig
    ("Settings | Editor | Code Style") have priority (will overwrite) over your IDE settings.
 
-[Caching]: https://github.com/QubitPi/jersey-webservice-template/tree/master/src/main/java/com/qubitpi/ws/jersey/template/cache
-[Caching tests]: https://github.com/QubitPi/jersey-webservice-template/tree/master/src/test/groovy/org/qubitpi/ws/jersey/template/cache
+[Caching]: https://github.com/QubitPi/Engine-HL230/tree/master/src/main/java/com/qubitpi/ws/jersey/template/cache
+[Caching tests]: https://github.com/QubitPi/Engine-HL230/tree/master/src/test/groovy/org/qubitpi/ws/jersey/template/cache
 
-[Docker-based integration tests]: https://github.com/QubitPi/jersey-webservice-template/blob/master/src/test/groovy/com/qubitpi/ws/jersey/template/DataServletITSpec.groovy
+[Docker-based integration tests]: https://github.com/QubitPi/Engine-HL230/blob/master/src/test/groovy/com/qubitpi/ws/jersey/template/DataServletITSpec.groovy
 
 [JAX-RS]: https://jcp.org/en/jsr/detail?id=370
 [Jersey]: https://eclipse-ee4j.github.io/jersey.github.io/documentation/latest/index.html
-[Jersey Webservice Template]: https://qubitpi.github.io/jersey-webservice-template/
-[jersey-webservice-template Dockerfile]: https://github.com/QubitPi/jersey-webservice-template/blob/master/Dockerfile
+[Engine HL230]: https://qubitpi.github.io/Engine-HL230/
+[Engine-HL230 Dockerfile]: https://github.com/QubitPi/Engine-HL230/blob/master/Dockerfile
 [Jetty]: https://en.wikipedia.org/wiki/Jetty_(web_server)
 
-[style config]: https://github.com/QubitPi/jersey-webservice-template/blob/master/Jersey-Webservice-Template-Project-intellij-code-style.xml
+[style config]: https://github.com/QubitPi/Engine-HL230/blob/master/Engine-HL230-Project-intellij-code-style.xml

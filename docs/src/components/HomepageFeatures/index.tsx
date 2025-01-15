@@ -1,5 +1,5 @@
 /**
- * Copyright Jiaqi Liu
+ * Copyright 2025 Jiaqi Liu
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -91,7 +91,7 @@ const FeatureList: FeatureItem[] = [
     id: 'not-used',
     description: (
       <>
-        JWT is 100% open source and available on <a href="https://github.com/QubitPi/jersey-webservice-template">Github</a>. Released
+        JWT is 100% open source and available on <a href="https://github.com/QubitPi/Engine-HL230">Github</a>. Released
         under the commercial-friendly
         <a href="http://www.apache.org/licenses/LICENSE-2.0.html"> Apache License, Version 2.0.</a>
       </>

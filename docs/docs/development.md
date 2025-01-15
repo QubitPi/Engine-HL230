@@ -37,7 +37,7 @@ Packaging
 mvn clean package
 ```
 
-A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named **jersey-webservice-template-1.0-SNAPSHOT.war** will
+A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named **engine-hl230-1.0-SNAPSHOT.war** will
 be generated under _target_ directory for [running in Jetty](#running-webservice-in-standalone-jetty-production)
 
 Running Webservice in Docker (Local Dev & Testing ONLY)
@@ -46,7 +46,7 @@ Running Webservice in Docker (Local Dev & Testing ONLY)
 This [Docker] image can be used for
 
 1. decoupling frontend and backend developments, and
-2. making it easy to run E2E testing of application backed by Jersey Webservice Template in CI/CD
+2. making it easy to run E2E testing of application backed by Engine HL230 in CI/CD
 
 :::caution
 
@@ -61,10 +61,10 @@ We can obtain the image in one of the 2 approaches below:
 
 #### Docker Hub
 
-We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/jersey-webservice-template/):
+We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/Engine-HL230/):
 
 ```bash
-docker pull jack20191124/jersey-webservice-template
+docker pull jack20191124/Engine-HL230
 ```
 
 #### GitHub
@@ -72,10 +72,10 @@ docker pull jack20191124/jersey-webservice-template
 We could also build the image from [source][Docker]:
 
 ```bash
-git clone https://github.com/QubitPi/jersey-webservice-template.git
-cd jersey-webservice-template
+git clone https://github.com/QubitPi/Engine-HL230.git
+cd Engine-HL230
 mvn clean package
-docker build -t jack20191124/jersey-webservice-template .
+docker build -t jack20191124/Engine-HL230 .
 ```
 
 :::info
@@ -83,7 +83,7 @@ docker build -t jack20191124/jersey-webservice-template .
 <!-- markdown-link-check-disable -->
 
 - The `mvn clean package` requires JDK 17 which can be setup with [instructions here](setup)
-- The `jack20191124/jersey-webservice-template` in the last command is the image name; we could replace that value with
+- The `jack20191124/Engine-HL230` in the last command is the image name; we could replace that value with
   anything preferred
 
 <!-- markdown-link-check-enable -->
@@ -95,10 +95,10 @@ docker build -t jack20191124/jersey-webservice-template .
 When image is built, we can spin up an instance with
 
 ```bash
-docker run --name=jersey-webservice-template -it -p 8080:8080 jack20191124/jersey-webservice-template
+docker run --name=Engine-HL230 -it -p 8080:8080 jack20191124/Engine-HL230
 ```
 
-- **name=jersey-webservice-template**: the container is named "jersey-webservice-template". We can change it
+- **name=Engine-HL230**: the container is named "Engine-HL230". We can change it
   accordingly.
 - **-p 8080:8080**: 8080 is the port where webservice will listen on. With this port forwarding, we will be able to
   access webservice from host machine web browser at `localhost:8080`
@@ -171,10 +171,10 @@ The webservice will run on port **8080**, and you will see the data you inserted
 Deployment
 ----------
 
-Jersey Webservice Template supports
+Engine HL230 supports
 [automatically deploying to AWS through HashiCorp][hashicorp-aws webservice]
 
-[Docker]: https://github.com/QubitPi/jersey-webservice-template/blob/master/Dockerfile
+[Docker]: https://github.com/QubitPi/Engine-HL230/blob/master/Dockerfile
 
 [jcabi-mysql]: https://mysql.jcabi.com/
 

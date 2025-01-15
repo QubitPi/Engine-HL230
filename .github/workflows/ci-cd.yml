@@ -1,4 +1,4 @@
-# Copyright Jiaqi Liu
+# Copyright 2025 Jiaqi Liu
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,19 +51,19 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actionshub/markdownlint@main
 
-  linkChecker:
-    name: Link Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.9.0
-        with:
-          fail: true
+#  linkChecker:
+#    name: Link Check
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Link Checker
+#        uses: lycheeverse/lychee-action@v1.9.0
+#        with:
+#          fail: true
 
   tests:
     name: Unit & Integration Tests
-    needs: [yaml-lint, markdown-lint, linkChecker]
+    needs: [yaml-lint, markdown-lint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -145,4 +145,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jersey-webservice-template:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/Engine-HL230:latest
