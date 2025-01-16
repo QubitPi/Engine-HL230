@@ -5,7 +5,7 @@ Engine HL230 Webservice
 [![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/QubitPi/Engine-HL230/actions/workflows/ci-cd.yml)
 [![Apache License Badge]][Apache License, Version 2.0]
 
-__Engine-HL230__ is a [JSR 370] object storage webservice based on [Athena]
+__Engine-HL230__ is a [JSR 370] object storage webservice based on [Athena] that is _optimized for storing video files_
 
 License
 -------
