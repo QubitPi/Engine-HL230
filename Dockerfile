@@ -11,6 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+FROM maven:3.8.3-openjdk-17 as build
+
+RUN mkdir /engine-hl230
+COPY . /engine-hl230
+RUN cd /engine-hl230 && mvn clean package -Dmaven.test.skip=true
+
 FROM ubuntu:22.04
 
 LABEL maintainer="Jiaqi (Jack) Liu"
@@ -41,8 +47,7 @@ RUN rm jetty-home-$JETTY_VERSION.tar.gz
 RUN mkdir jetty-base
 RUN cd jetty-base && java -jar $JETTY_HOME/start.jar --add-module=annotations,server,http,deploy,servlet,webapp,resources,jsp
 
-COPY ./target/engine-hl230-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
+COPY --from=build /engine-hl230/target/engine-hl230-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
 
 COPY ./Dockerfile-startup.sh /Dockerfile-startup.sh
-
 CMD [ "/Dockerfile-startup.sh" ]
