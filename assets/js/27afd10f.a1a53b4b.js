@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[4848],{1411:e=>{e.exports=JSON.parse('{"label":"Oracle","permalink":"/Engine-HL230/blog/tags/oracle","allTagsPath":"/Engine-HL230/blog/tags","count":1,"unlisted":false}')}}]);

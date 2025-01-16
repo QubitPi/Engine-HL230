@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[1054],{5567:s=>{s.exports=JSON.parse('{"label":"JPA","permalink":"/Engine-HL230/blog/tags/jpa","allTagsPath":"/Engine-HL230/blog/tags","count":5,"unlisted":false}')}}]);

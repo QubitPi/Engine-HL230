@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[4218],{8343:e=>{e.exports=JSON.parse('{"permalink":"/Engine-HL230/blog/tags/java/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":12,"previousPage":"/Engine-HL230/blog/tags/java","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

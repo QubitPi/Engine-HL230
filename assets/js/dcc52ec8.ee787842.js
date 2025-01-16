@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[9386],{6314:a=>{a.exports=JSON.parse('{"label":"Apache Avro","permalink":"/Engine-HL230/blog/tags/apache-avro","allTagsPath":"/Engine-HL230/blog/tags","count":1,"unlisted":false}')}}]);
