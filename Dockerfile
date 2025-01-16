@@ -41,7 +41,8 @@ RUN rm jetty-home-$JETTY_VERSION.tar.gz
 RUN mkdir jetty-base
 RUN cd jetty-base && java -jar $JETTY_HOME/start.jar --add-module=annotations,server,http,deploy,servlet,webapp,resources,jsp
 
-COPY ./target/Engine-HL230-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
+COPY ./target/engine-hl230-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
 
 COPY ./Dockerfile-startup.sh /Dockerfile-startup.sh
+
 CMD [ "/Dockerfile-startup.sh" ]
